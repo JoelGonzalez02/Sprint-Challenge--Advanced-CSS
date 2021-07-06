@@ -1,1 +1,37 @@
-// Navigation code here
+.navWrapper {
+    width: 100%;
+    padding: 40px 0 10px 0;
+    .flex(space-around, column, center);
+    background-color: lighten(grey, 45%);
+    margin: 0 auto;
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@keyframes colorSwitch {
+    0%      {color: black;}
+    25%     {color: @shuttle-gray;}
+    50%     {color: black;}
+    75%     {color: @waterloo;}
+    100%    {color: black;}
+}
+
+
+nav {
+    
+    a {
+        .navText();
+
+    &:hover {
+        animation: colorSwitch 2s infinite linear alternate;
+    }
+    }
+
+
+    
+}
